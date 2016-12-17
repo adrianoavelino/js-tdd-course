@@ -29,3 +29,15 @@ sudo npm install gitignore -g
 gitignore -types #lista os tipos de arquivos gitignore
 gitignore Node
 ```
+
+#### Aula - Criando arquivos para documentação
+template: https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+licença: https://opensource.org/licenses/MIT
+Contribuição: https://github.com/willianjusten/js-tdd-course/blob/master/CONTRIBUTING.md
+
+#### Aula - Padrões de Código - Styleguides
+Jshint: http://jshint.com/
+JSCS: http://jscs.info/
+Eslint: http://eslint.org/Idiomatic
+Styleguide Airbnb: https://github.com/airbnb/javascript
+Standard: https://github.com/feross/standard
