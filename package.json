@@ -1,0 +1,24 @@
+{
+  "name": "js-tdd-course",
+  "version": "1.0.0",
+  "description": "Nossa Biblioteca JS com TDD na Prática",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianoavelino/js-tdd-course.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Adriano Avelino <adriano-st777@hotmail.com> (https://adrianoavelino.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adrianoavelino/js-tdd-course/issues"
+  },
+  "homepage": "https://github.com/adrianoavelino/js-tdd-course#readme"
+}
