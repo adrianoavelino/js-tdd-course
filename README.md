@@ -31,13 +31,21 @@ gitignore Node
 ```
 
 #### Aula - Criando arquivos para documentação
-template: https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
-licença: https://opensource.org/licenses/MIT
-Contribuição: https://github.com/willianjusten/js-tdd-course/blob/master/CONTRIBUTING.md
+- template: https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+- licença: https://opensource.org/licenses/MIT
+- Contribuição: https://github.com/willianjusten/js-tdd-course/blob/master/CONTRIBUTING.md
 
 #### Aula - Padrões de Código - Styleguides
-Jshint: http://jshint.com/
-JSCS: http://jscs.info/
-Eslint: http://eslint.org/Idiomatic
-Styleguide Airbnb: https://github.com/airbnb/javascript
-Standard: https://github.com/feross/standard
+- Jshint: http://jshint.com/
+- JSCS: http://jscs.info/
+- Eslint: http://eslint.org/Idiomatic
+- Styleguide Airbnb: https://github.com/airbnb/javascript
+- Standard: https://github.com/feross/standard
+
+#### Aula - Instalando e Usando o Eslint
+- instale o ESlint localmente
+```bash
+sudo npm install eslint --save-dev
+sudo npm install eslint-plugin-jsx-a11y@^2.2.3 --save-dev #tive que instalar manualmente devido a dependência
+./node_modules/.bin/eslint --init
+```
