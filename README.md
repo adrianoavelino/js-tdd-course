@@ -49,3 +49,17 @@ sudo npm install eslint --save-dev
 sudo npm install eslint-plugin-jsx-a11y@^2.2.3 --save-dev #tive que instalar manualmente devido a dependência
 ./node_modules/.bin/eslint --init
 ```
+
+#### Configurando o editorconfig
+- site: http://editorconfig.org/
+- exemplo de configuração:
+```bash
+root = true
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+```
