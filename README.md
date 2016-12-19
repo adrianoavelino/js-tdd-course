@@ -48,6 +48,7 @@ gitignore Node
 sudo npm install eslint --save-dev
 sudo npm install eslint-plugin-jsx-a11y@^2.2.3 --save-dev #tive que instalar manualmente devido a dependência
 ./node_modules/.bin/eslint --init
+./node_modules/.bin/eslint src/*.js
 ```
 
 #### Configurando o editorconfig
