@@ -99,3 +99,26 @@ npm install husky --save-dev
 - Tabela de Compatibilidade do ES6: http://kangax.github.io/compat-table/es6/
 - Blog do Ponyfoo - ES6 in Depth: https://ponyfoo.com/articles/tagged/es6-in-depth
 - Blog do Jonas Mendes - Nipher.io: http://nipher.io/
+#### Escopo do JS
+```js
+function sayAnimal() {
+  var animal = 'cat';
+  console.log(animal);
+}
+sayAnimal();
+/** Erro de escopo **/
+//console.log(animal);
+```
+#### Variável let no JS
+```js
+var animal = "cat";
+console.log(animal);
+{
+  let animal = 'dog';
+  console.log(animal);
+}
+console.log(animal);
+//cat
+//dog
+//cat
+```
