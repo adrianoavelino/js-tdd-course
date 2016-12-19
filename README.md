@@ -74,3 +74,22 @@ insert_final_newline = true
   "test": "echo \"Error: no test specified\" && exit 1"
 },
 ```
+
+#### Configurando hooks no git
+- Husky: https://github.com/typicode/husky
+- instalando husky
+```bash
+npm install husky --save-dev
+```
+- tipos de hooks: https://github.com/typicode/husky/blob/master/HOOKS.md
+- configurando Husky
+```
+// Edit package.json
+{
+    "scripts": {
+      "precommit": "npm test",
+      "prepush": "npm test",
+      "...": "..."
+    }
+}
+```
