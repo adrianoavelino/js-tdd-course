@@ -93,3 +93,9 @@ npm install husky --save-dev
     }
 }
 ```
+### Módulo 02 - <small>Aprendendo ES6</small>
+#### Introdução ao ES6
+- ES6 Features: http://es6-features.org/#Constants
+- Tabela de Compatibilidade do ES6: http://kangax.github.io/compat-table/es6/
+- Blog do Ponyfoo - ES6 in Depth: https://ponyfoo.com/articles/tagged/es6-in-depth
+- Blog do Jonas Mendes - Nipher.io: http://nipher.io/
