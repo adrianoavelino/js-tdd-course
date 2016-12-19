@@ -63,3 +63,13 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 ```
+
+#### Criando um Npm Script
+- Por que npm scripts: https://css-tricks.com/why-npm-scripts/
+- Exemplo de npm script no arquivo package.json:
+```
+"scripts": {
+  "eslint": "./node_modules/.bin/eslint src/*.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+```
