@@ -122,3 +122,18 @@ console.log(animal);
 //dog
 //cat
 ```
+#### Variável const no JS
+```js
+    const secretNumber = 28;
+
+    const will = {
+        name: 'Willian',
+        age: 53
+    };
+
+    Object.freeze(will);
+
+    will.age = 26;
+
+    console.log(will);
+```
