@@ -158,4 +158,7 @@ console.log(cat);
     const loveChain = ireland
                         .filter(name => name === 'Dublin')
                         .map(name => `I love ${name}!`);
-    console.log(loveChain);```
+    console.log(loveChain);
+    ```
+#### Arrow Function e o Lexical This
+    `revisar`
