@@ -137,3 +137,8 @@ console.log(animal);
 
     console.log(will);
 ```
+#### Temporal Dead Zone
+```js
+console.log(cat);
+    let cat = 'meow';
+```
