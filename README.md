@@ -162,3 +162,22 @@ console.log(cat);
     ```
 #### Arrow Function e o Lexical This
     `revisar`
+#### Introdução a Template Literals
+```js
+const ireland = {
+      live: 'Dublin',
+      love: 'Galway'
+  };
+  const text = 'Eu moro em ' + ireland.live + ' e sou apaixonado por ' + ireland.love+'!';
+  const newText = `Eu moro em ${ireland.live} e sou apaixonado por ${ireland.love}!`;
+const fruits = 'bannana'
+              + `\n`
+              + 'orange'
+              + `\n`
+              + 'apple';
+const newFruits =
+`bannana
+orange
+apple`;
+  console.log(newFruits);
+```
