@@ -276,3 +276,29 @@ console.log(text.endsWith('ame', 25));
 console.log(text.includes('ipsum'));
 console.log('lol'.repeat(10));
 ```
+#### Array.from()
+- Livro com explicações das novas features do Array http://exploringjs.com/es6/ch_arrays.html
+```js
+<!DOCTYPE html>
+<html>
+<head>
+    <title>01 - Array.from</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Willian</li>
+        <li>Jonas</li>
+        <li>Gabriel</li>
+    </ul>
+</body>
+<script>
+    // const text = 'Willian';
+    // console.log(Array.from(text));
+    const list = document.querySelectorAll('#list li');
+    const listArray = Array.from(list)
+    console.log(listArray);
+    const names = listArray.map((name) => name.textContent);
+    console.log(names);
+</script>
+</html>
+```
