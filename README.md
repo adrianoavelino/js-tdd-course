@@ -307,3 +307,26 @@ console.log('lol'.repeat(10));
 const array = Array.of(1,4, 'Willian', {name: 'Jonas'});
 console.log(array);
 ```
+#### Array.find() e Array.findIndex()
+```js
+const data = [
+    {
+        name: 'Willian',
+        age: 26,
+        city: 'Dublin'
+    },
+    {
+        name: 'Jonas',
+        age: 22,
+        city: 'Cologne'
+    }
+];
+// const sampleArray = [4, -5, 0, -1];
+// const underZero = sampleArray.find(x => x < 0);
+// const underZeroIndex = sampleArray.findIndex(x => x < 0);
+// console.log(underZero);
+// console.log(underZeroIndex);
+const jonas = data.find(person => person.name === 'Jonas');
+const jonasIndex = data.findIndex(person => person.name === 'Jonas');
+console.log(jonasIndex);
+```
