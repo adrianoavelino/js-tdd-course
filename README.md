@@ -302,3 +302,8 @@ console.log('lol'.repeat(10));
 </script>
 </html>
 ```
+#### Array.of()
+```js
+const array = Array.of(1,4, 'Willian', {name: 'Jonas'});
+console.log(array);
+```
