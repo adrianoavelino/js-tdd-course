@@ -334,10 +334,38 @@ console.log(jonasIndex);
 ```js
 const arr = new Array(50);
 arr.fill('lol', 3, 6);
-
 console.log(arr);
 const newArr = [1,2,3,4,5,6];
 newArr.fill('lol', 1, 3);
 console.log(newArr);
-
+```
+#### Introdução ao Destructuring
+```js
+var data = {
+    name: 'Willian',
+    surname: 'Justen',
+    age: 25,
+    blog: 'https://willianjusten.com.br',
+    social: {
+        twitter: '@Willian_Justen',
+        facebook: '/willianjusten'
+    }
+};
+// const name = data.name;
+// const surname = data.surname;
+// const twitter = data.social.twitter;
+// console.log(name);
+// console.log(surname);
+// console.log(twitter);
+//
+const { name, surname } = data;
+console.log(name);
+console.log(surname);
+const { facebook, twitter } = data.social;
+console.log(facebook);
+console.log(twitter);
+const { facebook: fb } = data.social;
+console.log(fb);
+const { city = 'Dublin' } = data;
+console.log(city);
 ```
