@@ -402,3 +402,12 @@ console.log(fullStack);
 // console.log([...'will']);
 // console.log(...front);
 ```
+#### Usando o spread dentro de funções
+```js
+
+    function makeSandwich(bread, cheese, sauce) {
+        console.log(`Your sandwich with ${bread} bread, ${cheese} cheese and ${sauce} is done!`);
+    }
+    const ingredients = ['white', 'cheddar', 'barbecue'];
+    makeSandwich(...ingredients);
+```
