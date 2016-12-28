@@ -378,3 +378,13 @@ console.log(surname);
 console.log(age);
 console.log(city);
 ```
+#### Fazendo swap de variáveis com destructuring
+```js
+let a = 42;
+let b = 21;
+console.log("a: ", a);
+console.log("b: ", b);
+[a, b] = [b, a]
+console.log("a: ", a);
+console.log("b: ", b);
+```
