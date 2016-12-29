@@ -418,3 +418,22 @@ function multiply(mult, ...args) {
 }
 console.log(multiply(5, 1, 2, 3, 4, 5, 6));
 ```
+#### Introdução a Promises
+```js
+var defer = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        if (true) {
+            resolve('Hello! It works!');
+        } else {
+            reject('Error!');
+        }
+    }, 2000);
+});
+defer
+    .then((data) => {
+        console.log(data);
+        return 'foo';
+    })
+    .then((data) => console.log(data))
+    .catch((err) => console.log(err));
+```
