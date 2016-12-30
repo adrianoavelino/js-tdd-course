@@ -437,3 +437,16 @@ defer
     .then((data) => console.log(data))
     .catch((err) => console.log(err));
 ```
+#### Exemplo Real de Promises
+```js
+var posts = fetch('https://willianjusten.com.br/search.json');
+// pending
+// resolved
+// rejected
+posts
+    .then(data => data.json())
+    .then(data => {
+        throw new Error('ixi deu erro');
+    })
+    .catch(err => console.error(err));
+```
