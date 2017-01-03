@@ -531,3 +531,5 @@ class Dog extends Animal {
 const elephant = new Animal('Dumbo');
 const dog = new Dog('Jake', 'auau');
 ```
+#### Introdução a Symbols
+- [arquivo da aula](https://github.com/willianjusten/es6-curso/blob/master/10-symbols-iterators/01-symbols-intro.html)
