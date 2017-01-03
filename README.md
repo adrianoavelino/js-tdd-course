@@ -533,3 +533,22 @@ const dog = new Dog('Jake', 'auau');
 ```
 #### Introdução a Symbols
 - [arquivo da aula](https://github.com/willianjusten/es6-curso/blob/master/10-symbols-iterators/01-symbols-intro.html)
+#### Iterators e Iterables - for...of
+```js
+// iterators
+// iterable
+var txt = 'Ireland'; // iterable
+var it = txt[Symbol.iterator](); // iterator
+// console.log( it.next() );
+// console.log( it.next() );
+// console.log( it.next() );
+// console.log( it.next() );
+// console.log( it.next() );
+// console.log( it.next() );
+// console.log( it.next() );
+// console.log( it.next() );
+for ( letter of txt ) {
+    console.log(letter);
+    if (letter === 'a') break;
+}
+```
