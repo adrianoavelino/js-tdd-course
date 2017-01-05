@@ -590,3 +590,20 @@ function* ajaxGen() {
 const dados = ajaxGen();
 dados.next();
 ```
+#### Introdução ao Proxy
+```js
+let obj = {
+    name: 'Willian',
+    age: 26
+};
+let proxy = new Proxy(obj, {
+    get(target, name) {
+        console.log('Alguém está o pedindo o nome =D');
+        return target[name];
+    },
+    set(target, name, value) {
+        console.log('Alguém está mudando o nome!');
+        target[name] = value.toUpperCase();
+    }
+});
+```
