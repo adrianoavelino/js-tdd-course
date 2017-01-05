@@ -624,3 +624,15 @@ for (name of it) {
     console.log(name);
 }
 ```
+#### Introdução ao WeakSet
+```js
+let obj1 = {
+    name: 'Willian',
+    age: 26
+};
+let obj2 = {
+    name: 'Jonas',
+    age: 22
+};
+let ws = new WeakSet([obj1, obj2]);
+```
