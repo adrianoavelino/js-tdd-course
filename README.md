@@ -643,3 +643,17 @@ m.set('Willian', 26);
 m.set('Jonas', 22);
 m.set('Godoy', 30);
 ```
+#### Introdução ao WeakMap
+```js
+let obj1 = {
+     name: 'Willian',
+     age: 26
+ };
+ let obj2 = {
+     name: 'Jonas',
+     age: 22
+ };
+ let wm = new WeakMap();
+ wm.set(obj1, 'Info do Willian');
+ wm.set(obj2, 'Info do Jonas');
+```
