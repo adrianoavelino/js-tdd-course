@@ -636,3 +636,10 @@ let obj2 = {
 };
 let ws = new WeakSet([obj1, obj2]);
 ```
+#### Introdução ao Map
+```js
+let m = new Map();
+m.set('Willian', 26);
+m.set('Jonas', 22);
+m.set('Godoy', 30);
+```
