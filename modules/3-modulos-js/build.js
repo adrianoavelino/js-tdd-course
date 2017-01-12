@@ -11652,14 +11652,21 @@ module.exports = _curry3(function zipWith(fn, a, b) {
 Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ramda__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ramda___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_ramda__);
+// import método from 'biblioteca'
+// * carrega tudo da lib
+// as => alias para o método (novo nome)
 
 
 var arr1 = [1, 1, 2, 3];
 var arr2 = [2, 3, 4];
 
-var arr3 = __WEBPACK_IMPORTED_MODULE_0_ramda__["union"](arr1, arr2);
+var arr3 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_ramda__["union"])(arr1, arr2);
+
+var arr4 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_ramda__["uniq"])(arr1);
 
 console.log(arr3);
+
+console.log(arr4);
 
 /***/ }
 /******/ ]);

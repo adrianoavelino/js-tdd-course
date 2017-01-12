@@ -56,3 +56,24 @@ Para testar se funcionou execute no terminal:
 ```sh
 npm run watch
 ```
+## Trabalhando com Imports no ES6
+```js
+// import método from 'biblioteca'
+// * carrega tudo da lib
+// as => alias para o método (novo nome)
+import { union as juntaTudo, uniq as soOsMesmos }  from 'ramda';
+
+const arr1 = [1, 1, 2, 3];
+const arr2 = [2, 3, 4];
+
+const arr3 = juntaTudo(arr1, arr2);
+
+const arr4 = soOsMesmos(arr1);
+
+console.log(arr3);
+
+console.log(arr4);
+```
+- [Site do RamdaJS](http://ramdajs.com/)
+- [Site da MDN sobre Imports - complemento da aula](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+- [Capítulo sobre Módulos - ExploringJS - Inglês](http://exploringjs.com/es6/ch_modules.html)
