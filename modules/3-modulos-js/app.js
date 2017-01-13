@@ -3,6 +3,8 @@
 // as => alias para o método (novo nome)
 import { union as juntaTudo, uniq as soOsMesmos }  from 'ramda';
 import sum, { sub, mult, div as divisao, PI } from './utils.js';
+import react from 'react';
+import reactDom from 'react-dom';
 
 const arr1 = [1, 1, 2, 3];
 const arr2 = [2, 3, 4];

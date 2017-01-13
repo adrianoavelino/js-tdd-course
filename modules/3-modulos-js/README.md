@@ -191,3 +191,52 @@ module.exports = {
   ]
 };
 ```
+##  Variáveis de Ambiente no Webpack
+```sh
+npm install --save react react-dom
+```
+- adicione o código abaixo no webpack.config.js
+
+```js
+new webpack.DefinePlugin({
+  'process.env': { NODE_ENV: JSON.stringify(nodeENV) }
+})
+```
+- Exemplo de arquivo webpack.config.js atualizado
+
+```js
+const webpack = require('webpack');
+const nodeENV = process.env.node_ENV || 'production';
+module.exports = {
+  entry: {
+    filename: './app.js',
+  },
+  output: {
+    filename: './build.js',
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets: [
+            ['es2015', { modules: false }],
+          ],
+        },
+      },
+    ],
+  },
+  plugins:[
+    new webpack.optimize.UglifyJsPlugin({
+      compress: { warnings: false },
+      output: { comments: false },
+      sourceMap: true
+    }),
+    new webpack.DefinePlugin({
+      'process.env': { NODE_ENV: JSON.stringify(nodeENV) }
+    })
+  ]
+};
+```
