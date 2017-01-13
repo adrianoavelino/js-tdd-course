@@ -240,3 +240,46 @@ module.exports = {
   ]
 };
 ```
+## Adicionando Sourcemaps em nosso código
+- [Tabela mostrando os tipos de source-map](https://webpack.github.io/docs/configuration.html#devtool)
+- Adicione a linha `devtool:'source-map',` e a linha `sourceMap: true` no arquivo `webpack.config.js`.
+
+Arquivo após alteração:
+```js
+const webpack = require('webpack');
+const nodeENV = process.env.node_ENV || 'production';
+
+module.exports = {
+  devtool: 'source-map',
+  entry: {
+    filename: './app.js',
+  },
+  output: {
+    filename: './build.js',
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets: [
+            ['es2015', { modules: false }],
+          ],
+        },
+      },
+    ],
+  },
+  plugins:[
+    new webpack.optimize.UglifyJsPlugin({
+      compress: { warnings: false },
+      output: { comments: false },
+      sourceMap: true
+    }),
+    new webpack.DefinePlugin({
+      'process.env': { NODE_ENV: JSON.stringify(nodeENV) }
+    })
+  ]
+};
+```
