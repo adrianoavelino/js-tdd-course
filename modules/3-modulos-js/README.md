@@ -283,3 +283,42 @@ module.exports = {
   ]
 };
 ```
+## Inicializando um server com Webpack
+
+```sh
+npm install --save-dev webpack-dev-server
+```
+- adicione a seguinte linha no seu arquivo `package.json`:
+
+```js
+"server": "./node_modules/.bin/webpack-dev-server --inline --open"
+```
+
+arquivo `package.json` após atualização:
+```js
+{
+  "name": "modulos-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --colors --progress",
+    "watch": "npm run build -- --watch",
+    "server": "./node_modules/.bin/webpack-dev-server --inline --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "webpack": "^2.2.0-rc.3"
+  },
+  "dependencies": {
+    "ramda": "^0.22.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
+```
